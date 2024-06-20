@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <style>
+      .t {
+        height: 250px;
+        width: 250px;
+
+        margin-top: 150px;
+        margin-left: 40px;
+        background-color: yellow;
+        border: 10px double black;
+      }
+
+      .g {
+        height: 100px;
+        width: 100px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 50%;
+        background-color: red;
+        border: 2px solid black;
+        animation: bouncy 3s linear infinite;
+      }
+
+      @keyframes bouncy {
+        0% {
+          transform: translate(0px);
+        }
+
+        25% {
+          transform: translateX(150px);
+        }
+
+        50% {
+          transform: translateY(150px);
+          background-color: lime;
+        }
+
+        75% {
+          transform: translateX(150px);
+        }
+
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="t">
+      <div class="g"></div>
+    </div>
+  </body>
+</html>
